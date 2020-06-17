@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Best Time To Visit</title>
+        <link href="style.css" type="text/css" rel="stylesheet">
+        <link href="bootstrap.css" type="text/css" rel="stylesheet">
+        <meta name="viewport" content="width = device-width" inital-scale=1>
+        
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="head">
+                <h1>Enter a Place Below</h1>
+            </div>
+           
+            
+            <form action="#" onsubmit="myFunction();apiCall(); return false">
+                <input id="txtvalue"  class = "text" type="text" oninput="myFunction()" >
+                <br>
+                    <select id="datalist1" size="4" onchange="dataSelect(); ">
+                        <option value="1">Chopta </option>
+                        <option value="3">Valley Of FLower </option>
+                        <option value="4">LansdoWne </option>
+                        <option value="5">Harsil </option>
+                        <option value="6">Munsiyari </option>
+                        <option value="7">Bhimtal </option>
+                        <option value="17">Pauri </option>
+                        <option value="20">Dehradun </option>
+                        <option value="22">Srinagar </option>
+                        <option value="25">Tungnah Temple </option>
+                        <option value="26">Bhowali </option>
+                        <option value="27">Almora </option>
+                        <option value="28">Ranikhet </option>
+                        <option value="29">Rudraprayag </option>
+                        <option value="30">Gairsain </option>
+                        <option value="31">Bageshwar </option>
+                        <option value="32">Haldwani </option>
+                        <option value="33">Kirti Nagar  </option>
+                        <option value="34">Uttarkashi</option>
+                        <option value="35">Gangotri</option>
+                        <option value="36">Badrinath </option>
+                        <option value="37">Mukteshwar</option>
+                        <option value="38">Kausani</option>
+                        <option value="39">Pithoragarh</option>
+                        <option value="40">Kedarnath</option>
+                        <option value="41">Nainital</option>
+                        <option value="10">Auli </option>
+                        <option value="28">Joshimath</option>
+                        <option value="29">Tehri Garhwal</option>
+                        <option value="9">Naukuchiatal</option>
+                        <option value="10">Sattal</option>
+                        <option value="23">Bhullatal Lake</option>
+                        <option value="18">Sahastradhara</option>
+                        <option value="19">Robber's Cave</option>
+                        <option value="21">Forest Research Instute(FRI)</option>
+                        <option value="16">Lachhiwala</option>
+                        <option value="12">Birthi Falls</option>
+                        <option value="15">Thamri Kund</option>
+                        <option value="13">Khaliya Top</option>
+                        <option value="14">George Everest Peak</option>
+                        <option value="8">Chandrashila Top</option>
+                        <option value="2">Rishikesh </option>
+                    </select>
+                <br>
+                <button class="btn btn-primary bott" type="submit">Submit</button>
+            </form>
+            
+                <div class="row">
+                   <div class="col-md-2 col-xs-12 hidden-xs hidden-sm press img1" >
+                        <img src="uktrav_ad.jpg">
+                      
+                    </div>
+                    <div class="col-sm-8 col-xs-12 visible-xs visible-sm press img1" style="margin-top: 2px; margin-bottom:30px">
+                        <img src="ukrav_ad_mobile.jpg">
+                      
+                    </div>
+                    <div class="col-md-8 Rsearches">
+                    <div class="row">
+                        <div class="headin"> <h1>Recent Searches</h1></div>
+                            
+                            <div class="panel panel-default col-md-6 col-xs-6 left">
+                                <div class="panel-body title1 ">Chopta</div> 
+                            </div>
+                            <div class="panel panel-default col-md-6 col-xs-6 right">
+                                <div class="panel-body tilte">Lansdowne</div> 
+                            </div>
+                            <div class="panel panel-default col-md-6 col-xs-6  left">
+                                <div class="panel-body title">George Everest Peak</div> 
+                            </div>
+                            <div class="panel panel-default col-md-6 col-xs-6 right">
+                                <div class="panel-body title">Khaliya Top</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2 col-xs-12 hidden-xs hidden-sm press img1" >
+                        <img src="blank_ad.jpg"> 
+                      </div>
+                    <div class="col-sm-8 col-xs-12 visible-xs visible-sm press img1" style="margin-top: 2px; margin-bottom:30px">
+                        <img src="blank_ad_mobile.jpg">
+                    </div>
+            </div>
+        </div>
+        <div class="container sbout">
+            <div class="panel panel-default about ">
+
+                <div class="panel-body">
+                    <b>About Us</b>
+                    <p>Best Time to Visit is a single page app made by the team of <a href="http://www.uttarakhandtraveller.com/ ">Uttarakhand Traveller </a>in contribution to Uttarakhand Tourism. It's sole purpose is to provide Best-Time-to-Visit as its the most frequently asked question when someone plans for a visit.</p> 
+                    </div>
+                
+            <hr>
+                    <div class="panel-body">
+                        <b>How to Use</b>
+                        <p>Simply start typing the place/destination name and it appears in the dropdown menu and click on it to select it then submit it. If the place exists in our database, it will be shown right away, else a message will tell you its not.</p>
+                    </div>
+               <hr>
+                <div class="panel-body">
+                    <b>Open for Contribution</b>
+                    <p>When you get detail of any place, it has an option to edit the information. As soon as you click that you have option to submit your knowledge. Once you submit the information, it is sent for approval and once approved it edits the current info for the place. In this way, you can correct us, help Uttarakhand Tourism.</p>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <b>Contact Us</b>
+                    <p>Email us at uttarakhandtraveler@gmail.com</p>
+                    <b>Social Media</b>
+                    <a href="https://www.facebook.com/uttarakhandtravellers/"><i class="fab fa-facebook-square"></i></a>
+                    <a href="https://www.instagram.com/uttarakhandtraveller/"><i class="fab fa-instagram"></i></a>
+                </div>
+                <hr>
+                <div class="panel-body">
+                    <b>Special Thanks</b>
+                    <p>Concept by Bhartendu Mehta</p>
+                </div>
+                <hr>
+                <p style="text-align: center" >Developed for the <i class="fas fa-heart"></i>  of Uttarakhand by arundeepak<a href="https://www.linkedin.com/in/deepak-mehta-1955684b/"><i class="fab fa-linkedin"></i></a></p> 
+            </div>
+        </div>
+        
+        <div class="container land ">
+            <img id="img" src="">
+                <hr>
+            <h4></h4>
+            <div class="panel panel-default about ">
+                <div class="panel-body dist">
+                    <p id="para"></p>
+            
+                </div>
+            </div>
+        
+        </div>
+        
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+
+    </body>
+</html>
